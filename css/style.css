@@ -53,6 +53,9 @@
     .hero h1{font-size: clamp(28px, 4.4vw, 52px); line-height:1.1; margin:0 0 12px; letter-spacing:.2px}
     .hero p{font-size: clamp(16px, 1.8vw, 20px); color:#d7def7; margin:0 0 22px}
     .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+    .hero-cta {
+      margin-top: 10px;
+    }
 
     /* Sections */
     section{padding:56px 0}
@@ -78,11 +81,17 @@
     .plan ul{margin:0; padding-left:1.1rem; flex-grow: 1;}
     .plan li{margin:.3rem 0}
     .plan .cta{margin-top:14px}
+    .plan-grow {
+      border-color: rgba(106,125,255,.5);
+    }
 
     /* Cases */
     .case{padding:18px}
     .case h3{margin:.2rem 0 .5rem}
     .case .kpi{margin-top:10px; display:flex; gap:10px; flex-wrap:wrap}
+    .cases-cta {
+      margin-top: 18px;
+    }
 
     /* ROI calc */
     .calc .row label {
@@ -116,6 +125,30 @@
       flex: 0 0 25%;
     }
     .lead-grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:20px}
+    .form-full-width {
+      grid-column: 1 / -1;
+    }
+    .lead-form-controls {
+      justify-content: flex-start;
+      grid-column: 1 / -1;
+      gap: 1rem;
+    }
+    #wantDemo {
+      width: 5%;
+    }
+    label[for="wantDemo"] {
+      width: calc(60%);
+    }
+    .lead-form-submit-btn {
+      width: 25%;
+    }
+    #leadMsg {
+      margin: 0;
+      display: none;
+    }
+    .lead-form-privacy-text {
+      margin: 0;
+    }
     @media (max-width: 960px){ .lead-grid{grid-template-columns: 1fr} }
     .media-box{min-height: 100%; display:grid; place-items:center; padding:18px; background: radial-gradient(500px 240px at 80% 0%, rgba(106,125,255,.15), transparent 60%), linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius)}
     .media-box .phone{width:min(320px, 90%); aspect-ratio: 9/19.5; border-radius: 26px; border:1px solid rgba(255,255,255,.12); background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); box-shadow: var(--shadow); position:relative; overflow:hidden}
