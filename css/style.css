@@ -16,8 +16,8 @@
     body{
       margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
       color:var(--text);
-      background-color: var(--bg);
-      background-image: linear-gradient(135deg, var(--bg), #004d40);
+      background-color: #1a1a1a; /* Very dark grey, almost black */
+      background-image: linear-gradient(135deg, #1a1a1a, rgba(70, 30, 0, 0.3)); /* Black to dull orange gradient */
       background-attachment: fixed;
       background-size: cover;
       letter-spacing:.2px;
