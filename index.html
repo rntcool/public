@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AppCore — мини‑автоматизация для малого бизнеса</title>
+  <meta name="description" content="Собираем быстрые веб‑инструменты под вашу задачу: учёт клиентов, доставки, QR‑статусы, сортировка контента. Прототип за дни, обучение за час, локальные интеграции." />
+  <meta property="og:title" content="AppCore — мини‑автоматизация для малого бизнеса" />
+  <meta property="og:description" content="Лёгкие веб‑приложения вместо тяжёлых CRM: быстрее, дешевле, только нужное." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#10131a" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo"><span class="logo-badge" aria-hidden="true"></span> AppCore</div>
+      <nav aria-label="Основная навигация">
+        <ul>
+          <li><a href="#about" class="navlink">О сервисе</a></li>
+          <li><a href="#who" class="navlink">Для кого</a></li>
+          <li><a href="#solutions" class="navlink">Решения</a></li>
+          <li><a href="#benefits" class="navlink">Выгода</a></li>
+          <li><a href="#process" class="navlink">Процесс</a></li>
+          <li><a href="#pricing" class="navlink">Пакеты</a></li>
+          <li><a href="#cases" class="navlink">Кейсы</a></li>
+          <li><a href="#faq" class="navlink">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn small ghost" href="#demo">Демо</a>
+        <a class="btn small primary" href="#lead">Разбор 20 мин</a>
+      </div>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <div class="tag" aria-label="позиционирование">Мини‑системы автоматизации • до 10 сотрудников</div>
+          <h1>Лёгкие веб‑инструменты вместо тяжёлых CRM<br/>— быстро, понятно, без лишнего.</h1>
+          <p>Учёт клиентов и заказов, доставки и статусы по QR, сортировка фото/текста и любая рутина, которая крадёт время и деньги. Прототип за дни, обучение за час, локальные интеграции.</p>
+          <div class="center" style="margin-top:10px">
+            <a href="#lead" class="btn primary">Получить бесплатный разбор</a>
+            <a href="#demo" class="btn ghost">Смотреть демо‑кейсы</a>
+          </div>
+          <div class="badges">
+            <span class="tag">RU/KZ интерфейсы</span>
+            <span class="tag">Деплой под ключ</span>
+            <span class="tag">Поддержка без бюрократии</span>
+            <span class="tag">PWA / мобильная версия</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="media-box card" aria-hidden="true">
+            <div class="phone">
+              <div class="bar"></div>
+              <div class="scr">
+                <div class="bubble">Заказ #1023 — 🚚 В пути</div>
+                <div class="bubble">Напомнить клиенту завтра в 11:00</div>
+                <div class="bubble">QR отсканирован • чек‑лист ✓✓</div>
+                <div class="bubble">Фото‑подтверждение загружено</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ДЛЯ КОГО -->
+    <section id="who">
+      <div class="container">
+        <h2 class="reveal">Для кого это</h2>
+        <p class="lead reveal">Компании до ~10 человек, где нужен порядок без перегруза.</p>
+        <ul class="list reveal">
+          <li><span class="bullet">✓</span> Быстро навести учёт: клиенты, заказы, оплаты, статусы.</li>
+          <li><span class="bullet">✓</span> Видеть «кто/что/когда» без 100500 полей и сложных настройках.</li>
+          <li><span class="bullet">✓</span> Автоматизировать простые процессы: QR‑статусы, мини‑логистика, сортировка фото/текста.</li>
+          <li><span class="bullet">✓</span> Запуститься без зоопарка сервисов и дорогих подписок.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- БОЛИ / РЕШАЕМ ПРОБЛЕМЫ -->
+    <section id="problems">
+      <div class="container">
+        <h2 class="reveal">Какие боли закрываем</h2>
+        <div class="grid grid-2">
+          <div class="card feature reveal">
+            <div class="icon">🧱</div>
+            <div>
+              <h3>Тяжёлые платформы</h3>
+              <p>Bitrix/“аналог” громоздкий и лишний для вашей задачи. Мы оставляем только нужное.</p>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">🗂️</div>
+            <div>
+              <h3>Данные расползлись</h3>
+              <p>Excel, чат, бумажка, “в голове”. Собираем в одну лёгкую систему с ролями.</p>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">⏳</div>
+            <div>
+              <h3>Рутина съедает часы</h3>
+              <p>Перекидывание файлов, копипаст, ручные статусы — автоматизируем.</p>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">⚡</div>
+            <div>
+              <h3>Нужно вчера</h3>
+              <p>Прототип за дни, запуск быстро. Обучение — за 60 минут.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- РЕШЕНИЯ/МОДУЛИ -->
+    <section id="solutions">
+      <div class="container">
+        <h2 class="reveal">Что именно делаем</h2>
+        <p class="lead reveal">Любой блок — модуль. Комбинируем под вашу задачу.</p>
+        <div class="grid grid-3">
+          <div class="card feature reveal">
+            <div class="icon">📇</div>
+            <div>
+              <h3>Мини‑CRM «Клиенты/Заказы»</h3>
+              <p>Контакты, статусы, задачи, напоминания, отчёты по дням/неделям.</p>
+              <div class="meta"><span class="tag">Импорт из Excel</span><span class="tag">Роли</span></div>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">🚚</div>
+            <div>
+              <h3>Учёт доставок</h3>
+              <p>Маршруты, статусы «в пути/доставлено», фото‑подтверждения, KPI.</p>
+              <div class="meta"><span class="tag">Курьеры</span><span class="tag">Маршруты</span></div>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">🔳</div>
+            <div>
+              <h3>QR‑процессы</h3>
+              <p>QR на заказ/услугу: клиент видит статус, сотрудники — чек‑лист.</p>
+              <div class="meta"><span class="tag">Печать QR</span><span class="tag">История</span></div>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">🖼️</div>
+            <div>
+              <h3>Конвейеры контента</h3>
+              <p>Сортировка изображений/текста по правилам, переименование, теги, экспорт.</p>
+              <div class="meta"><span class="tag">Правила</span><span class="tag">Экспорт</span></div>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">🤖</div>
+            <div>
+              <h3>Боты и нотификации</h3>
+              <p>WhatsApp/Telegram‑воронки, автосообщения по статусам, формы→система.</p>
+              <div class="meta"><span class="tag">Webhook</span><span class="tag">Шаблоны</span></div>
+            </div>
+          </div>
+          <div class="card feature reveal">
+            <div class="icon">🧩</div>
+            <div>
+              <h3>Кастом‑модули</h3>
+              <p>Любые простые процессы и интеграции под специфику ниши.</p>
+              <div class="meta"><span class="tag">API</span><span class="tag">1C/Kaspi</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПОЧЕМУ ВЫГОДНО + ТЕХ -->
+    <section id="benefits">
+      <div class="container grid grid-2">
+        <div>
+          <h2 class="reveal">Почему это выгодно</h2>
+          <ul class="list reveal">
+            <li><span class="bullet">★</span> Только нужные поля и статусы — ничего лишнего.</li>
+            <li><span class="bullet">⚡</span> Прототип за дни. Минимальный запуск — очень быстро.</li>
+            <li><span class="bullet">₸</span> Разовая сборка + недорогая поддержка.</li>
+            <li><span class="bullet">🔌</span> Локальные интеграции: Google Sheets/1C/Kaspi/WhatsApp.</li>
+            <li><span class="bullet">📱</span> PWA — как приложение с иконкой на телефоне.</li>
+          </ul>
+        </div>
+        <div class="grid">
+          <h2 class="reveal">Технологии и интеграции</h2>
+          <div class="card feature reveal"><div class="icon">🧠</div><div><h3>Стек</h3><p>Чистый веб: HTML/CSS/JS, React/Vue по задаче; PHP/MySQL/Node для бэкенда.</p></div></div>
+          <div class="card feature reveal"><div class="icon">🛰️</div><div><h3>Интеграции</h3><p>Google Sheets/Excel, 1C, Kaspi, WhatsApp/Telegram, 2GIS/Maps, e‑mail/SMS.</p></div></div>
+          <div class="card feature reveal"><div class="icon">🔐</div><div><h3>Безопасность</h3><p>Роли и доступы, SSL, бэкапы, разворачивание у вас или на нашем сервере.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROI CALC -->
+    <section id="roi">
+      <div class="container grid grid-2">
+        <div>
+          <h2 class="reveal">Посчитаем выгоду в цифрах</h2>
+          <p class="lead reveal">Экономия в месяц = (время до − после) × ставка × сотрудники × 22 рабочих дня</p>
+          <div class="card calc reveal">
+            <div class="row">
+              <div>
+                <label>Сколько часов рутины срежем в день (на 1 сотрудника)</label>
+                <input type="number" id="hours" min="0" step="0.25" value="1" />
+              </div>
+              <div>
+                <label>Сколько сотрудников вовлечено</label>
+                <input type="number" id="people" min="1" step="1" value="4" />
+              </div>
+              <div>
+                <label>Ставка (₸/час)</label>
+                <input type="number" id="rate" min="0" step="50" value="1500" />
+              </div>
+              <div>
+                <label>Рабочих дней в мес</label>
+                <input type="number" id="days" min="1" max="31" step="1" value="22" />
+              </div>
+            </div>
+            <div class="sep"></div>
+            <div class="result"><strong>Экономия в месяц:</strong> <div id="savings">—</div></div>
+          </div>
+          <p class="muted reveal">Покажем окупаемость после короткой диагностики. Платите только за то, что реально нужно.</p>
+        </div>
+        <div>
+          <h2 class="reveal">Процесс</h2>
+          <div class="grid">
+            <div class="card feature reveal"><div class="icon">🧭</div><div><h3>Диагностика 20–40 мин</h3><p>Фиксируем цели, роли, метрики, данные.</p></div></div>
+            <div class="card feature reveal"><div class="icon">🧪</div><div><h3>Прототип</h3><p>Кликабельные экраны ключевых действий.</p></div></div>
+            <div class="card feature reveal"><div class="icon">🛠️</div><div><h3>Сборка & интеграции</h3><p>Только нужные модули, без лишнего.</p></div></div>
+            <div class="card feature reveal"><div class="icon">🚀</div><div><h3>Запуск & обучение</h3><p>За 60 минут команда готова работать.</p></div></div>
+            <div class="card feature reveal"><div class="icon">♻️</div><div><h3>Поддержка</h3><p>Чек‑лист улучшений без бюрократии.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПАКЕТЫ -->
+    <section id="pricing">
+      <div class="container">
+        <h2 class="reveal">Пакеты</h2>
+        <div class="pricing grid grid-3">
+          <div class="card plan reveal">
+            <h3>Start</h3>
+            <p class="muted">Однотипная задача</p>
+            <ul>
+              <li>1 модуль (например, QR‑статусы)</li>
+              <li>1 интеграция (Sheets/почта)</li>
+              <li>Обучение персонала</li>
+              <li>30 дней поддержки</li>
+            </ul>
+            <div class="cta"><a href="#lead" class="btn small">Запросить смету</a></div>
+          </div>
+          <div class="card plan reveal" style="border-color: rgba(106,125,255,.5)">
+            <h3>Grow</h3>
+            <p class="muted">2–3 модуля</p>
+            <ul>
+              <li>Комбинация: клиенты+заказы, доставки, уведомления</li>
+              <li>2–3 интеграции (Kaspi/WhatsApp/Sheets)</li>
+              <li>Роли и доступы, отчёты</li>
+            </ul>
+            <div class="cta"><a href="#lead" class="btn small primary">Запросить смету</a></div>
+          </div>
+          <div class="card plan reveal">
+            <h3>Pro</h3>
+            <p class="muted">Кастом под процессы</p>
+            <ul>
+              <li>Набор модулей + учётка/1C</li>
+              <li>Правила, автоматизация, дашборды</li>
+              <li>Импорт исторических данных</li>
+            </ul>
+            <div class="cta"><a href="#lead" class="btn small">Обсудить архитектуру</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КЕЙСЫ -->
+    <section id="cases">
+      <div class="container">
+        <h2 class="reveal">Кейсы</h2>
+        <div class="grid grid-3">
+          <div class="card case reveal">
+            <h3>Цветы & доставки</h3>
+            <p>QR‑статусы + фото‑подтверждения → меньше звонков “а где заказ?”, быстрее выдача курьерам.</p>
+            <div class="kpi"><span class="tag">−40% звонков</span><span class="tag">+25% скорость</span></div>
+          </div>
+          <div class="card case reveal">
+            <h3>Салон услуг</h3>
+            <p>Мини‑CRM + напоминания → снижение пропусков, рост повторных визитов.</p>
+            <div class="kpi"><span class="tag">−30% no‑show</span><span class="tag">+15% LTV</span></div>
+          </div>
+          <div class="card case reveal">
+            <h3>Склад‑лайт</h3>
+            <p>Учёт прихода/расхода + авто‑отчёты в Sheets → контроль остатков без Excel‑хаоса.</p>
+            <div class="kpi"><span class="tag">−60% ручного ввода</span></div>
+          </div>
+        </div>
+        <div id="demo" class="center" style="margin-top:18px">
+          <a class="btn ghost" href="#lead">Хочу демо под мою нишу</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЛИЧИЯ / БЕЗОПАСНОСТЬ -->
+    <section id="diff">
+      <div class="container grid grid-2">
+        <div>
+          <h2 class="reveal">Чем отличаемся</h2>
+          <ul class="list reveal">
+            <li><span class="bullet">1</span> Каждый экран отвечает на один конкретный вопрос.</li>
+            <li><span class="bullet">2</span> “Живые” метрики — видна реальная экономия времени/денег.</li>
+            <li><span class="bullet">3</span> Быстрая поддержка: пишете — правки идут.</li>
+            <li><span class="bullet">4</span> Локальный контекст: RU/KZ интерфейсы и интеграции.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="reveal">Безопасность и доступы</h2>
+          <ul class="list reveal">
+            <li><span class="bullet">🔑</span> Роли (владелец/менеджер/исполнитель/курьер).</li>
+            <li><span class="bullet">📜</span> Журналы действий, бэкапы, SSL.</li>
+            <li><span class="bullet">🗄️</span> Разворачивание у вас или на нашем сервере. Доступы — ваши.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2 class="reveal">FAQ</h2>
+        <details class="reveal"><summary>Это заменит Bitrix?</summary><div class="muted">Для малого штата — да. Сохраняем только нужные сущности и статусы без перегруза.</div></details>
+        <details class="reveal"><summary>Как быстро запустим?</summary><div class="muted">Прототип — за дни. Минимальный запуск — очень быстро после согласования.</div></details>
+        <details class="reveal"><summary>Можно дорабатывать?</summary><div class="muted">Да. Модульная архитектура: растёт вместе с бизнесом.</div></details>
+        <details class="reveal"><summary>Будет работать на телефоне?</summary><div class="muted">PWA — это сайт, который выглядит и работает как обычное приложение: открывается в отдельном окне, есть иконка на рабочем столе, может работать офлайн и присылать уведомления. Главное отличие — его не нужно скачивать из магазина, он устанавливается прямо из браузера и обновляется автоматически.</div></details>
+        <details class="reveal"><summary>Сложно ли обучить персонал?</summary><div class="muted">Проводим 60‑минутный онбординг и выдаём памятку. Интерфейс интуитивный.</div></details>
+      </div>
+    </section>
+
+    <!-- ЛИД‑ФОРМА -->
+    <section id="lead">
+      <div class="container">
+        <h2 class="reveal">Посчитаем выгоду за 20 минут</h2>
+        <p class="lead reveal">Оставьте контакты — предложим пилот под вашу нишу.</p>
+        <div class="lead-grid">
+          <form id="leadForm" class="card reveal" novalidate>
+            <div class="grid">
+              <div>
+                <label for="name">Имя</label>
+                <input id="name" name="name" placeholder="Как к вам обращаться" required />
+              </div>
+              <div>
+                <label for="phone">Телефон / WhatsApp</label>
+                <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___‑__‑__" inputmode="tel" required />
+              </div>
+              <div>
+                <label for="niche">Бизнес‑ниша</label>
+                <input id="niche" name="niche" placeholder="Цветы, салон, склад, доставка…" />
+              </div>
+              <div>
+                <label for="time">Удобное время звонка</label>
+                <input id="time" name="time" placeholder="Сегодня 16:00, завтра 11:30…" />
+              </div>
+              <div style="grid-column:1/-1">
+                <label for="pain">Что бесит больше всего?</label>
+                <textarea id="pain" name="pain" rows="4" placeholder="Опишите текущую рутину и где теряется время"></textarea>
+              </div>
+              <div class="center" style="justify-content:space-between; grid-column:1/-1">
+                <div class="center" style="gap: .5rem;" id="checkbox-label-wrapper">
+                  <input type="checkbox" id="wantDemo" />
+                  <label for="wantDemo">Хочу демо на моём примере</label>
+                </div>
+                <button class="btn primary" type="submit">Получить разбор</button>
+              </div>
+              <p id="leadMsg" class="muted" style="margin:0; display:none"></p>
+              <p class="muted" style="margin:0">Отправляя форму, вы соглашаетесь на обработку данных. Никакого спама.</p>
+            </div>
+          </form>
+          <div class="media-box reveal" aria-hidden="true">
+            <div class="phone">
+              <div class="bar"></div>
+              <div class="scr">
+                <div class="bubble">«Меньше кликов — больше кассы»</div>
+                <div class="bubble">«Лёгкие инструменты вместо тяжёлых платформ»</div>
+                <div class="bubble">«Рутина автоматизируется — вы растёте»</div>
+                <div class="bubble">Готовы к пилоту? 🚀</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container grid grid-3">
+      <div class="footcol">
+        <strong>AppCore</strong>
+        <span class="muted">Мини‑автоматизация для малого бизнеса</span>
+        <span class="muted">© <span id="year"></span></span>
+      </div>
+      <div class="footcol">
+        <span>Контакты</span>
+        <a href="tel:+77000000000">+7 700 000‑00‑00</a>
+        <a href="mailto:hello@appcore.example">hello@appcore.example</a>
+      </div>
+      <div class="footcol">
+        <span>Полезное</span>
+        <a href="#roi">Калькулятор выгоды</a>
+        <a href="#faq">FAQ</a>
+        <a href="#lead">Получить разбор</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="btn to-top" id="toTop" href="#about" aria-label="Наверх">↑</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
