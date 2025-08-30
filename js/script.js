@@ -43,19 +43,62 @@
       e.target.value = `+7 ${p1? '('+p1+') ':''}${p2}${p3? '-'+p3:''}${p4? '-'+p4:''}`.trim();
     });
 
-    // Lead form (localStorage demo)
+    // Lead form (Telegram integration)
     const form = document.getElementById('leadForm');
     const msg = document.getElementById('leadMsg');
-    form.addEventListener('submit', (e)=>{
+    form.addEventListener('submit', async (e)=>{ // Added 'async' here
       e.preventDefault();
       const data = Object.fromEntries(new FormData(form).entries());
-      if(!data.name || !data.phone){ msg.style.display='block'; msg.textContent='Заполните имя и телефон'; return; }
-      const leads = JSON.parse(localStorage.getItem('appcore_leads')||'[]');
-      leads.push({...data, ts: Date.now(), demo: document.getElementById('wantDemo').checked});
-      localStorage.setItem('appcore_leads', JSON.stringify(leads));
-      form.reset();
-      msg.style.display='block';
-      msg.textContent = 'Спасибо! Мы свяжемся с вами в ближайшее время.';
+
+      if(!data.name || !data.phone){
+        msg.style.display='block';
+        msg.textContent='Заполните имя и телефон';
+        return;
+      }
+
+      const token = '6946537315:AAH22nLd65eT9y_41e8aB5yqUe4yY_gHk3w'; // NOTE: For a production environment, store this securely (e.g., server-side, environment variables)
+      const chatId = '-4252956923'; // NOTE: For a production environment, store this securely
+      const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+      const messageText = `
+Новая заявка с сайта:
+Имя: ${data.name || 'Не указано'}
+Телефон: ${data.phone || 'Не указан'}
+Email: ${data.email || 'Не указан'}
+Бизнес-ниша: ${data.niche || 'Не указана'}
+Удобное время звонка: ${data.time || 'Не указано'}
+Что бесит больше всего: ${data.pain || 'Не указано'}
+Хочу демо на моём примере: ${document.getElementById('wantDemo').checked ? 'Да' : 'Нет'}
+`;
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: messageText
+          })
+        });
+
+        const result = await response.json();
+
+        if (result.ok) {
+          msg.style.display='block';
+          msg.textContent = 'Спасибо! Мы свяжемся с вами в ближайшее время.';
+          form.reset();
+        } else {
+          msg.style.display='block';
+          msg.textContent = 'Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.';
+          console.error('Telegram API error:', result);
+        }
+      } catch (error) {
+        msg.style.display='block';
+        msg.textContent = 'Произошла ошибка сети. Пожалуйста, попробуйте еще раз.';
+        console.error('Error sending to Telegram:', error);
+      }
     });
 
     // Back to top

@@ -376,12 +376,10 @@
                 <label for="pain">Что бесит больше всего?</label>
                 <textarea id="pain" name="pain" rows="4" placeholder="Опишите текущую рутину и где теряется время"></textarea>
               </div>
-              <div class="center" style="justify-content:space-between; grid-column:1/-1">
-                <div class="center" style="gap: .5rem;" id="checkbox-label-wrapper">
-                  <input type="checkbox" id="wantDemo" />
-                  <label for="wantDemo">Хочу демо на моём примере</label>
-                </div>
-                <button class="btn primary" type="submit">Получить разбор</button>
+              <div class="center" style="justify-content:flex-start; grid-column:1/-1; gap: 1rem;">
+                <input type="checkbox" id="wantDemo" style="width: 5%; box-sizing: border-box;" />
+                <label for="wantDemo" style="width: calc(60%); box-sizing: border-box;">Хочу демо на моём примере</label>
+                <button class="btn primary" type="submit" style="width: 25%; box-sizing: border-box;">Получить разбор</button>
               </div>
               <p id="leadMsg" class="muted" style="margin:0; display:none"></p>
               <p class="muted" style="margin:0">Отправляя форму, вы соглашаетесь на обработку данных. Никакого спама.</p>
