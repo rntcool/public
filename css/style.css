@@ -16,12 +16,26 @@
     body{
       margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
       color:var(--text);
-      background-color: #008000; /* Green */
-      background-image: none; /* Remove gradient */
-      background-attachment: fixed;
-      background-size: cover;
+      background: linear-gradient(215deg, rgba(6, 8, 8, 1) 0%, rgba(22, 74, 41, 1) 50%, rgba(49, 12, 51, 1) 100%);
+      background-size: 400% 400%; /* Adjust size for new animation */
+      animation: gradientAngleAnimation 30s ease infinite; /* New animation name and duration */
       letter-spacing:.2px;
+      min-height: 100vh; /* Ensure full viewport height */
+      background-attachment: fixed; /* Fix background to viewport */
+      background-position: center center; /* Center the background */
     }
+
+@keyframes gradientAngleAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
     a{color:inherit; text-decoration:none}
     .container{max-width:var(--maxw); margin:0 auto; padding:0 20px}
     .btn{display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.1rem; border-radius:12px; border:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); box-shadow: var(--shadow); backdrop-filter: blur(6px); transition:.25s ease; cursor:pointer; font-weight:600}
